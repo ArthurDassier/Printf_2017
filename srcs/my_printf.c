@@ -34,13 +34,14 @@ static void my_init(int (*PointeursurFonction[8])(va_list ap))
 	PointeursurFonction[7] = &caseO;
 }
 
-int my_printf(char const *str, ...) {
-
+int my_printf(char const *str, ...)
+{
 	va_list ap;
 	va_start(ap, str);
 	int (*PointeursurFonction[8])(va_list ap);
 	my_init(PointeursurFonction);
 	int j;
+
 	for (int i = 0; str[i]; i++) {
 		if (str[i] != '%')
 			my_putchar(str[i]);
@@ -50,18 +51,17 @@ int my_printf(char const *str, ...) {
 			PointeursurFonction[j](ap);
 		}
 	}
-
 	va_end(ap);
 	return (0);
 }
 
-/*int main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[])
+{
 	char *str = "Bonjour";
 	int nb = 34;
 	int hexa = 15;
 	int octo = 8;
 
-
 	my_printf("Salut %s %i %c %X %o\n", str, nb, 'p', hexa, octo);
 	return (0);
-}*/
+}
