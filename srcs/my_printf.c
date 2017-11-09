@@ -22,19 +22,20 @@ static int str_parser(char flag)
 		return (i);
 }
 
-static void my_init(int (*PointeursurFonction[4])(va_list ap))
+static void my_init(int (*PointeursurFonction[5])(va_list ap))
 {
 	PointeursurFonction[0] = &caseS;
 	PointeursurFonction[1] = &caseD;
 	PointeursurFonction[2] = &caseD;
 	PointeursurFonction[3] = &caseC;
+	PointeursurFonction[4] = &caseU;
 }
 
 int my_printf(char const *str, ...) {
 
 	va_list ap;
 	va_start(ap, str);
-	int (*PointeursurFonction[4])(va_list ap);
+	int (*PointeursurFonction[5])(va_list ap);
 	my_init(PointeursurFonction);
 	int j;
 	for (int i = 0; str[i]; i++) {

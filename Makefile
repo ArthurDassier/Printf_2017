@@ -23,10 +23,10 @@ LIB_FLAG	=	-L$(LIB_DIR) -lmy
 INCL_FLAG	=	-I$(MY.H_DIR)
 
 all:	$(NAME)
-	$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LIB_FLAG) $(INCL_FLAG)
 
 $(NAME):	$(OBJ)
 		$(MAKE) -C lib/my
+		$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LIB_FLAG) $(INCL_FLAG)
 
 clean:
 	rm -f *.o

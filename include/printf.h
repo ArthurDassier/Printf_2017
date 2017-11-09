@@ -13,5 +13,6 @@ int my_printf(char const *str, ...);
 int caseS(va_list ap);
 int caseD(va_list ap);
 int caseC(va_list ap);
+int caseU(va_list ap);
 
 #endif

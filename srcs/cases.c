@@ -26,3 +26,10 @@ int caseC(va_list ap)
 	my_putchar(c);
 	return(0);
 }
+
+int caseU(va_list ap)
+{
+	int nb = va_arg(ap, int);
+	my_put_nbr(nb);
+	return(0);
+}
