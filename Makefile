@@ -7,6 +7,7 @@
 
 SRC	=	srcs/my_printf.c	\
 		srcs/cases.c		\
+		srcs/cases2.c		\
 
 OBJ	=	$(SRC:.c = .o)
 

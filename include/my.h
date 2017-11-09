@@ -40,5 +40,6 @@ int my_showstr(char const *str);
 int my_showmen(char const *str, int size);
 char *my_strcat(char *dest, char const *src);
 char *my_strnccat (char *dest, char const *src, int nb);
+int my_put_nbr_base(int nb, char *base);
 
 #endif /* protection double declaration */
