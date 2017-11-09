@@ -54,14 +54,3 @@ int my_printf(char const *str, ...)
 	va_end(ap);
 	return (0);
 }
-
-int main(int argc, char const *argv[])
-{
-	char *str = "Bonjour";
-	int nb = 34;
-	int hexa = 15;
-	int octo = 8;
-
-	my_printf("Salut %s %i %c %X %o\n", str, nb, 'p', hexa, octo);
-	return (0);
-}
