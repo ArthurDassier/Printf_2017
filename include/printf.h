@@ -16,5 +16,6 @@ int caseC(va_list ap);
 int caseU(va_list ap);
 int caseX(va_list ap);
 int caseO(va_list ap);
+//int caseP(va_list ap);
 
 #endif
