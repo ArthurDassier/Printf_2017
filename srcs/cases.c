@@ -6,7 +6,7 @@
 */
 #include "../include/my.h"
 
-int caseS(va_list ap)
+int case_s(va_list ap)
 {
 	char	*str = va_arg(ap, char *);
 
@@ -14,7 +14,7 @@ int caseS(va_list ap)
 	return (0);
 }
 
-int caseD(va_list ap)
+int case_d(va_list ap)
 {
 	int	nb = va_arg(ap, int);
 
@@ -22,7 +22,7 @@ int caseD(va_list ap)
 	return(0);
 }
 
-int caseC(va_list ap)
+int case_c(va_list ap)
 {
 	char	c = va_arg(ap, int);
 
@@ -30,7 +30,7 @@ int caseC(va_list ap)
 	return (0);
 }
 
-int caseU(va_list ap)
+int case_u(va_list ap)
 {
 	int	nb = va_arg(ap, int);
 
@@ -38,7 +38,7 @@ int caseU(va_list ap)
 	return (0);
 }
 
-int caseX(va_list ap)
+int case_x(va_list ap)
 {
 	int	nb = va_arg(ap, int);
 
