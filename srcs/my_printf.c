@@ -4,8 +4,8 @@
 ** File description:
 ** printf
 */
-#include "my.h"
-#include "printf.h"
+#include "../include/my.h"
+#include "../include/printf.h"
 #include <stdio.h>
 
 static int str_parser(char flag)

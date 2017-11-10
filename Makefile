@@ -11,7 +11,7 @@ SRC	=	srcs/my_printf.c	\
 
 OBJ	=	$(SRC:.c = .o)
 
-NAME	=	my_printf
+NAME	=	libmy.a
 
 LIB_DIR	=	./lib
 
@@ -25,9 +25,8 @@ INCL_FLAG	=	-I$(MY.H_DIR)
 
 all:	$(NAME)
 
-$(NAME):	$(OBJ)
-		$(MAKE) -C lib/my
-		$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LIB_FLAG) $(INCL_FLAG)
+$(NAME):
+		$(MAKE) -C srcs/
 
 clean:
 	rm -f *.o

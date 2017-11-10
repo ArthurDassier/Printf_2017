@@ -4,7 +4,7 @@
 ** File description:
 ** Case s
 */
-#include "my.h"
+#include "../include/my.h"
 
 int caseS(va_list ap)
 {
