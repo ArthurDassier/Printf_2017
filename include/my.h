@@ -10,7 +10,7 @@
 
 void my_putchar (char c);
 int my_isneg(int nb);
-void my_put_nbr (int nb);
+int my_put_nbr(int nb);
 void my_swap(int *a, int *b);
 void my_putstr (char const *str);
 int my_strlen (char const *str);
@@ -40,6 +40,7 @@ int my_showmen(char const *str, int size);
 char *my_strcat(char *dest, char const *src);
 char *my_strnccat (char *dest, char const *src, int nb);
 int my_put_nbr_base(int nb, char *base);
+long my_put_nbr_base_long(long nb, char *base);
 int my_printf(char const *str, ...);
 int case_s(va_list ap);
 int case_d(va_list ap);
@@ -49,5 +50,7 @@ int case_x(va_list ap);
 int case_o(va_list ap);
 int case_p(va_list ap);
 int case_b(va_list ap);
+int case_smaj(va_list ap);
+int case_mod(va_list ap);
 
 #endif /* protection double declaration */

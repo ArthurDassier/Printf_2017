@@ -40,7 +40,7 @@ int case_u(va_list ap)
 	nb = va_arg(ap, int);
 	if (nb < 0)
 		nb = nb * (-1);
-	my_put_nbr(nb);
+	my_put_nbr_un(nb);
 	return (0);
 }
 
@@ -51,6 +51,6 @@ int case_x(va_list ap)
 	nb = va_arg(ap, int);
 	if (nb < 0)
 		nb = nb * (-1);
-	my_put_nbr_base(nb, "0123456789ABCDEF");
+	my_put_nbr_base_un(nb, "0123456789ABCDEF");
 	return (0);
 }

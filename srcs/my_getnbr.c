@@ -10,9 +10,13 @@
 
 int my_getnbr(char *str)
 {
-	int nb = 0;
-	int isneg = 1;
-	int i = 0;
+	int 	nb;
+	int 	isneg;
+	int 	i;
+
+	i = 0;
+	isneg = 1;
+	nb = 0;
 	if (str[i] >= 'A' && str[i] <= 'z') {
 		write(2, "It must be only numbers in string", 34);
 		return(0);

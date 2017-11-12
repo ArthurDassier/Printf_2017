@@ -11,7 +11,7 @@
 static int str_parser(char flag)
 {
 	int	i = 0;
-	char	*str = "sdicuxXopbS%";
+	char	*str = "sdicuxXopbS";
 
 	while (str[i] != flag && str[i] != '\0') {
 		i++;
@@ -22,7 +22,7 @@ static int str_parser(char flag)
 		return (i);
 }
 
-static void my_init(int (*PointeursurFonction[12])(va_list ap))
+static void my_init(int (*PointeursurFonction[11])(va_list ap))
 {
 	PointeursurFonction[0] = &case_s;
 	PointeursurFonction[1] = &case_d;
@@ -34,15 +34,14 @@ static void my_init(int (*PointeursurFonction[12])(va_list ap))
 	PointeursurFonction[7] = &case_o;
 	PointeursurFonction[8] = &case_p;
 	PointeursurFonction[9] = &case_b;
-	PointeursurFonction[10] = &case_smaj;
-	PointeursurFonction[11] = &case_mod;
+	PointeursurFonction[10] = &case_s;
 }
 
 int my_printf(char const *str, ...)
 {
 	va_list ap;
 	va_start(ap, str);
-	int	(*PointeursurFonction[12])(va_list ap);
+	int	(*PointeursurFonction[11])(va_list ap);
 	my_init(PointeursurFonction);
 	int	j;
 

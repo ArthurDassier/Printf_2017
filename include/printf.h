@@ -18,4 +18,7 @@ int case_x(va_list ap);
 int case_o(va_list ap);
 int case_p(va_list ap);
 int case_b(va_list ap);
+int case_smaj(va_list ap);
+int case_mod(va_list ap);
+
 #endif
