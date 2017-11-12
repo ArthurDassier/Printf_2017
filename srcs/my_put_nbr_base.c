@@ -10,15 +10,11 @@ void my_putchar(char c);
 void my_putchar(char c);
 int my_strlen(char *);
 
-int my_put_nbr_base(int nb, char *base)
+int my_put_nbr_base(unsigned int nb, char *base)
 {
 	int res;
 	int rest;
 
-	if (nb < 0) {
-		nb = nb * (-1);
-		my_putchar('-');
-	}
 	res = nb / my_strlen(base);
 	rest = nb % my_strlen(base);
 	if (res > 0)

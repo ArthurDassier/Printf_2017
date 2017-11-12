@@ -40,7 +40,7 @@ int my_showmen(char const *str, int size);
 char *my_strcat(char *dest, char const *src);
 char *my_strnccat (char *dest, char const *src, int nb);
 int my_put_nbr_base(int nb, char *base);
-long my_put_nbr_base_long(long nb, char *base);
+long my_put_nbr_base_long(long long nb, char *base);
 int my_printf(char const *str, ...);
 int case_s(va_list ap);
 int case_d(va_list ap);
