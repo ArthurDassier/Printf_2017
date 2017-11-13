@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** Cases2
+** cases2.c
 ** File description:
 ** Case
 */

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** my_printf
+** my_printf.c
 ** File description:
 ** printf
 */

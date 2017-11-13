@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** CSES3PRINTF
+** cases3.c
 ** File description:
 ** printf
 */
