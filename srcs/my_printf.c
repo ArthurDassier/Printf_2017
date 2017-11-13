@@ -31,7 +31,7 @@ static void my_init(int (*PointeursurFonction[12])(va_list ap))
 	PointeursurFonction[3] = &case_c;
 	PointeursurFonction[4] = &case_u;
 	PointeursurFonction[5] = &case_x;
-	PointeursurFonction[6] = &case_x;
+	PointeursurFonction[6] = &case_xmaj;
 	PointeursurFonction[7] = &case_o;
 	PointeursurFonction[8] = &case_p;
 	PointeursurFonction[9] = &case_b;

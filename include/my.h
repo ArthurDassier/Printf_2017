@@ -52,5 +52,6 @@ int case_p(va_list ap);
 int case_b(va_list ap);
 int case_smaj(va_list ap);
 int case_mod(va_list ap);
+int case_xmaj(va_list ap);
 
 #endif /* protection double declaration */
