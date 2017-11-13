@@ -9,18 +9,16 @@
 
 int case_o(va_list ap)
 {
-	int	nb;
+	int	nb = va_arg(ap, int);
 
-	nb = va_arg(ap, int);
 	my_put_nbr_base(nb, "01234567");
 	return (0);
 }
 
 int case_p(va_list ap)
 {
-	long	nb;
+	long	nb = va_arg(ap, long);
 
-	nb = va_arg(ap, long);
 	my_putstr("0x");
 	my_put_nbr_base_long(nb, "0123456789abcdef");
 	return (0);
@@ -28,9 +26,8 @@ int case_p(va_list ap)
 
 int case_b(va_list ap)
 {
-	int	nb;
+	int	nb = va_arg(ap, int);
 
-	nb = va_arg(ap, int);
 	my_put_nbr_base(nb, "01");
 	return (0);
 }
@@ -43,11 +40,9 @@ int case_mod(va_list ap)
 
 int case_smaj(va_list ap)
 {
-	char	*str;
-	int i;
+	char	*str = va_arg(ap, char *);
+	int	i = 0;
 
-	i = 0;
-	str = va_arg(ap, char *);
 	while (str[i] != '\0') {
 		if (str[i] > 32 && str[i] <= 127)
 			my_putchar(str[i]);
