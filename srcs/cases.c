@@ -35,8 +35,6 @@ int case_u(va_list ap)
 {
 	int	nb = va_arg(ap, int);
 
-	if (nb < 0)
-		return(84);
 	my_put_nbr(nb);
 	return (0);
 }
