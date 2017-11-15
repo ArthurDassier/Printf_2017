@@ -50,7 +50,8 @@ int case_smaj(va_list ap)
 			my_putchar('\\');
 			if (str[i] <= 7)
 				my_putchar('0');
-			my_putchar('0');
+			if (str[i] == 127)
+				my_putchar('0');
 			my_put_nbr_base(str[i], "01234567");
 		}
 		i++;

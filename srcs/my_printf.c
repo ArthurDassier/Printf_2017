@@ -53,6 +53,8 @@ int my_printf(char const *str, ...)
 		else {
 			i++;
 			j = str_parser(str[i]);
+			if (j == 84)
+				return(84);
 			PointeursurFonction[j](ap);
 		}
 	}
