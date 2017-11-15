@@ -12,11 +12,9 @@ int my_strlen(char *);
 
 long my_put_nbr_base_long(long long nb, char *base)
 {
-	long res;
-	long rest;
+	long	res = nb / my_strlen(base);
+	long	rest = nb % my_strlen(base);
 
-	res = nb / my_strlen(base);
-	rest = nb % my_strlen(base);
 	if (res > 0)
 		my_put_nbr_base_long(res, base);
 	my_putchar(base[rest]);
