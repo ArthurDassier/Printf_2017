@@ -35,7 +35,7 @@ int case_u(va_list ap)
 {
 	unsigned int	nb = va_arg(ap, unsigned int);
 
-	my_put_nbr(nb);
+	my_put_nbr_base(nb, "0123456789");
 	return (0);
 }
 
