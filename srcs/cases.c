@@ -33,7 +33,7 @@ int case_c(va_list ap)
 
 int case_u(va_list ap)
 {
-	int	nb = va_arg(ap, int);
+	unsigned int	nb = va_arg(ap, unsigned int);
 
 	my_put_nbr(nb);
 	return (0);

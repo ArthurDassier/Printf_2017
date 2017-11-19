@@ -26,7 +26,7 @@ int case_p(va_list ap)
 
 int case_b(va_list ap)
 {
-	int	nb = va_arg(ap, int);
+	unsigned int	nb = va_arg(ap, unsigned int);
 
 	my_put_nbr_base(nb, "01");
 	return (0);

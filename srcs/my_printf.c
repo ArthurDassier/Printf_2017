@@ -53,9 +53,12 @@ int my_printf(char const *str, ...)
 		else {
 			i++;
 			j = str_parser(str[i]);
-			if (j == 84)
-				return(84);
-			PointeursurFonction[j](ap);
+			if (j == 84) {
+				my_putchar('%');
+				my_putchar(str[i]);
+			}
+			else
+				PointeursurFonction[j](ap);
 		}
 	}
 	va_end(ap);
