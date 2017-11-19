@@ -14,3 +14,10 @@ int case_xmaj(va_list ap)
 	my_put_nbr_base(nb, "0123456789ABCDEF");
 	return (0);
 }
+
+int my_error(char str)
+{
+	my_putchar('%');
+	my_putchar(str);
+	return (0);
+}
